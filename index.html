@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria hut</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Pizzaria hut</h1>
+    </header>
+    
+    <main>
+        <div class="search-bar">
+            <input 
+                type="text" 
+                id="searchInput" 
+                placeholder="Pesquisar por pizza..." 
+            />
+            <div class="category-filters">
+                <button class="active" data-category="Todos">Todos</button>
+                <button data-category="Calabresa">Calabresa</button>
+                <button data-category="Marguerita">Marguerita</button>
+                <button data-category="Frango">Frango</button>
+                <button data-category="Vegetariana">Vegetariana</button>
+                <button data-category="Portuguesa">Portuguesa</button>
+                <button data-category="Peperoni">Peperoni</button>
+                <button data-category="Quatro Queijos">Quatro Queijos</button>
+            </div>
+        </div>
+        
+        <div class="store-banner-container">
+            <img src="https://www.shoppingtacaruna.com.br/files/store/16764231257154-pizzahut.jpg" alt="Banner da loja" class="store-banner" />
+        </div>
+        
+        <div class="content">
+            <div id="pizzasList" class="pizzas">
+                <!-- Pizzas serão adicionadas aqui pelo script -->
+            </div>
+            
+            <div class="shopping-cart">
+                <h1>Carrinho de Compras</h1>
+                <ul id="cartItems">
+                    <!-- Itens do carrinho serão adicionados aqui pelo script -->
+                </ul>
+                <div class="total">
+                    <h2>Total: R$ 0,00</h2>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

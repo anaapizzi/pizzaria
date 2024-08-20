@@ -1,0 +1,162 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral do corpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #000; /* Fundo preto */
+    color: #e0e0e0; /* Texto em cinza claro */
+    padding: 20px;
+}
+
+/* Estilo dos títulos */
+h1 {
+    margin-bottom: 20px;
+    color: red; /* Cor para o título */
+    text-align: center;
+}
+
+/* Estilo do container principal */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #1a1a1a; /* Fundo do container em cinza escuro */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+/* Estilo da imagem da loja */
+.store-banner {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+/* Barra de pesquisa e filtros */
+.search-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.category-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.category-filters button {
+    background-color: red; /* Cor dos filtros */
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.category-filters button.active {
+    background-color: red;
+}
+
+.category-filters button:hover {
+    background-color: red;
+}
+
+/* Layout de conteúdo: pizzas e carrinho */
+.content {
+    display: flex;
+    gap: 20px;
+}
+
+/* Estilo das listas de pizzas */
+.pizzas {
+    flex: 3;
+}
+
+.pizzas ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Tamanho reduzido das caixinhas */
+    gap: 20px;
+}
+
+.pizzas li {
+    background: #2c2c2c; /* Fundo dos itens em cinza escuro */
+    border: 1px solid #444;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-height: 200px; /* Altura reduzida */
+    flex: 1;
+}
+
+.pizzas img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #444;
+}
+
+/* Estilo dos parágrafos */
+p {
+    margin: 5px 0;
+}
+
+/* Estilo dos botões */
+button {
+    background-color: red; /* Cor dos botões */
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: red;
+}
+
+/* Estilo do carrinho de compras */
+.shopping-cart {
+    flex: 1;
+    background: #2c2c2c;
+    border: 1px solid #444;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.shopping-cart ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Adiciona espaçamento entre as linhas */
+li + li {
+    margin-top: 20px;
+}
